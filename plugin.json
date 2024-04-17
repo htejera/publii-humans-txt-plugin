@@ -1,0 +1,39 @@
+{
+  "name": "HumansTxt",
+  "description": "Allows users to create and manage a humans.txt file directly from Publii's interface.",
+  "license": "MIT",
+  "author": "htejera",
+  "version": "1.0.0",
+  "scope": "site",
+  "minimumPubliiVersion": "0.40.0",
+  "messageInOptions": {
+      "type": "info",
+      "text": "Configure your humans.txt file settings below."
+  },
+  "config": [
+      {
+          "name": "humansText",
+          "label": "Humans.txt Content",
+          "group": "Content Settings",
+          "type": "textarea",
+          "value": "",
+          "placeholder": "Type your humans.txt content here..."
+      },
+      {
+          "name": "includeUpdateDate",
+          "label": "Include Update Date",
+          "group": "Options",
+          "type": "checkbox",
+          "value": false,
+          "note": "Check this box if you want to automatically append the last updated date to your humans.txt file."
+      },
+      {
+          "name": "updateDateText",
+          "label": "Update Date Text",
+          "group": "Options",
+          "type": "text",
+          "value": "Last updated:",
+          "note": "Text to display alongside the last updated date in your humans.txt file."
+      }
+  ]
+}
